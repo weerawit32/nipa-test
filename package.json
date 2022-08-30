@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/weerawit32/nipa-test/issues"
   },
-  "homepage": "https://github.com/weerawit32/nipa-test#readme"
+  "homepage": "https://github.com/weerawit32/nipa-test#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.0",
+    "react-bootstrap": "^2.5.0",
+    "react-hook-form": "^7.34.2"
+  }
 }
