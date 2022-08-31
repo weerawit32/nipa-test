@@ -6,7 +6,7 @@ import {
   EDIT_TICKET,
 } from "./types";
 
-import tickets from "../apis/tickets";
+import tickets from "../../apis/tickets";
 
 export const createTicket = (data) => async (dispatch) => {
   const response = await tickets.post("/tickets", data);

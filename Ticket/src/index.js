@@ -7,13 +7,14 @@ import {
   applyMiddleware,
   compose,
 } from "redux";
+import reducers from "./redux/reducers";
 import reduxThunk from "redux-thunk";
 import App from "./App";
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const store = createStore(
-  reducer,
-  composeEnhancers(applyMiddleware(...middleware))
+  reducers,
+  composeEnhancers(applyMiddleware(reduxThunk))
 );
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -23,4 +24,6 @@ root.render(
       <App />
     </React.StrictMode>
   </Provider>
+  // document.querySelector('#root')
 );
+
